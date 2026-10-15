@@ -837,7 +837,7 @@ const DEFAULT_REF = {
     ["Corona", "0,0", "Can 4x33cl", 13.1, "pack", true, "can", true],
     ["Corona", "Sunset", "3x33cl", 17.9, "pack", true, "bouteille", false],
     ["Corona", "Sunset", "6x33cl", 17.9, "pack", true, "bouteille", false],
-    ["Corona", "Sunset", "12x33cl", 25.8, "pack", true, "bouteille", false], 
+    ["Corona", "Sunset", "12x33cl", 25.8, "pack", true, "bouteille", false],
     ["Flying Fish", "Originale", "3x33cl", 18.0, "pack", true, "bouteille", false],
     ["Flying Fish", "Originale", "6x33cl", 18.0, "pack", true, "bouteille", false],
     ["Flying Fish", "Originale", "12x33cl", 23.8, "pack", true, "bouteille", false],
@@ -852,7 +852,6 @@ const DEFAULT_REF = {
     ["Hoegaarden", "Rosée", "6x25cl", 18.0, "pack", true, "bouteille", false],
     ["Hoegaarden", "Rosée", "12x25cl", 23.5, "pack", true, "bouteille", false],
     ["Hoegaarden", "Rosée 0,0", "6x25cl", 18.0, "pack", true, "bouteille", true],
-    ["Jupiler", "Pils", "33cl", 6.1, "cab", true, "bouteille", false],
     ["Kwak", "Blonde", "33cl", 6.0, "cab", true, "bouteille", false],
     ["Kwak", "Blonde", "75cl", 8.3, "cab", true, "bouteille", false],
     ["Kwak", "Blonde", "Can 50cl", 6.6, "pack", true, "can", false],
@@ -935,7 +934,7 @@ const DEFAULT_REF = {
     ["Leffe", "Triple", "75cl", 9.0, "cab", true, "bouteille", false],
     ["Leffe", "Triple", "6x25cl", 18.0, "pack", true, "bouteille", false],
     ["Leffe", "Triple", "12x25cl", 23.5, "pack", true, "bouteille", false],
-    ["Stella Artois", "Originale", "6x25cl", 12.0, "pack", true, "bouteille", false],
+    ["Stella Artois", "Originale", "6x25cl", 16.8, "pack", true, "bouteille", false],
     ["Stella Artois", "Originale", "12x25cl", 22.2, "pack", true, "bouteille", false],
     ["Stella Artois", "Originale", "20x25cl", 30.0, "pack", true, "bouteille", false],
     ["Stella Artois", "Originale", "Can 50cl", 6.6, "pack", true, "can", false],
@@ -956,7 +955,7 @@ const DEFAULT_REF = {
     ["Victoria", "Originale", "6x33cl", 18.5, "pack", true, "bouteille", false]
   ].map(([marque,nom,format,largeur,segment,own,contenant,nab]) => ({ id: skuId(marque, nom, format), marque, nom, format, largeur, segment, own, contenant, nab })),
   exemple: false,
-  rev: 2
+  rev: 3
 };
 const newReleve = () => ({
   id: uid(), magasin: "", m1: LS.get("pdl.m1", ""), date: new Date().toISOString().slice(0,10),
